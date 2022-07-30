@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <title>THE MUSEN</title>
+    </head>
+
+    <body>
+        <div class="app">
+            <div class="container">
+                <div class="display_container">
+                    <div class="flex_display">
+                        <div class="block">
+                            <div>上り<span>△</span></div>
+                            <div>入換<span>□</span></div>
+                            <div>下り<span>▽</span></div>
+                            <div>◯</div>
+                        </div>
+
+                        <div class=" block">
+                            <div id="channel" class="channel" style="font-size: 2rem;">１</div>
+                            <div>◯</div>
+                        </div>
+
+                    </div>
+
+                    <span><span id="mode" style="opacity: 0.5;">乗務員</span><span
+                            style="color: white; opacity: 0.5;">/</span><span id="koki"
+                            style="color: orange; opacity: 0.5;">子機</span><span id="using"
+                            style="font-size: 1.25rem; color: gray; opacity: 0.5;">話中</span><span
+                            style="opacity: 0.5;">◯◯/◯◯</span>
+                    </span>
+
+                </div>
+
+                <div class="grid_container">
+                    <div class="flex">
+                        <div>
+                            <div class="flex mb">
+                                <button class="button">割込</button>
+                                <button class="button">試験</button>
+                            </div>
+                            <div class="flex mb">
+                                <button class="button" style="background-color: #71C59B;">電源</button>
+                                <button class="button">子機</button>
+                            </div>
+                            <div class="flex">
+                                <button class="f_button" onclick="func()">F</button>
+                            </div>
+                        </div>
+
+                        <div class="grid">
+                            <button class="big_button" style="background-color: orange;">デジタル<br>アナログ</button>
+                            <button class="big_button" onclick="switching()">列車／<br>乗務員</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid_3">
+                        <button class="button">1</button>
+                        <button class="button">2</button>
+                        <button class="button">3</button>
+                        <button class="button">4</button>
+                        <button class="button">5</button>
+                        <button class="button">6</button>
+                        <button class="button">7</button>
+                        <button class="button">8</button>
+                        <button class="button">9</button>
+                        <button class="button">＊</button>
+                        <button class="button">0</button>
+                        <button class="button">#</button>
+                        <button class="button" style="background-color: #F0EC6C;">上り</button>
+                        <button class="button" style="background-color: #F0EC6C;">入換</button>
+                        <button class="button" style="background-color: #F0EC6C;">下り</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script/main.js"></script>
+
+    </body>
+
+</html>
